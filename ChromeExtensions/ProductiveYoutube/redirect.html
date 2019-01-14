@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Productive Youtube</title>
+    <style>
+        body {
+            background-color: #292929;
+        }
+        h1 {
+          color: white;
+        }
+        p {
+          color: white;
+          font-size:18px;
+          margin: 5px;
+        }
+        input[type=text]{
+          border-radius:2px;
+          outline: none;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          border-width:2px;
+        }
+
+        input[type=text]:focus {border-color:#73A4FF; }
+
+        input[type=button] {
+          border-radius: 1px;
+          margin-top: 3px;
+          outline: none;
+          border-color: inherit;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          background-color: #73A4FF;
+          border-width:0px;
+          color: white;
+          font-size:14px;
+        }
+        hr{
+          color: white;
+        }
+        a{
+          cursor: pointer;
+          color: #ffc125;
+          font-size:20px;
+
+        }
+        a:hover{
+          color: #73A4FF;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1>That Isnt Productive!!!</h1>
+        <hr>
+        <div id="Content">
+          <p>Add Channel</p>
+          <input type="text" id="AddChannel" value="">
+          <input type="button" id="Add" value="Add">
+          <p>Remove Channel</p>
+          <input type="text" id="RemoveChannel" value="">
+          <input type="button" id="Remove" value="Remove">
+          <hr>
+          <p>White List</p>
+          <textarea readonly cols="20" rows="10" id="List"></textarea><br>
+          <input type="button" id="RemoveAll" value="Remove All"><br>
+        </div>
+        <a href="https://www.youtube.com/" style="font-size:20px; color: white;" >Back To YouTube</a><br>
+        <hr>
+        <a id="Pay"><u>Love Productive Youtube? Consider Donating!</u></a>
+    </form>
+    <script src="redirect.js"></script>
+    
+  </body>
+</html>

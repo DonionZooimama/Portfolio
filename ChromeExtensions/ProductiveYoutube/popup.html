@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Productive Youtube</title>
+    <style>
+        .onoffswitch {
+            position: relative; width: 35px;
+            -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+        }
+        .onoffswitch-checkbox {
+            display: none;
+        }
+        .onoffswitch-label {
+            display: block; overflow: hidden; cursor: pointer;
+            height: 16px; padding: 0; line-height: 16px;
+            border: 0px solid #E3E3E3; border-radius: 23px;
+            background-color: #CFCFCF;
+        }
+        .onoffswitch-label:before {
+            content: "";
+            display: block; width: 23px; margin: -3.5px;
+            background: #E6E6E6;
+            position: absolute; top: 0; bottom: 0;
+            right: 15px;
+            border-radius: 23px;
+        }
+        .onoffswitch-checkbox:checked + .onoffswitch-label {
+            background-color: #A1C2FF;
+        }
+        .onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+           border-color: #A1C2FF;
+        }
+        .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+            margin-left: 0;
+        }
+        .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+            right: 0px; 
+            background-color: #73A4FF; 
+        }
+        body {
+            background-color: #292929;
+        }
+        h2 {
+          color: #73A4FF;
+          padding: 2px;
+          margin: 0px;
+        }
+        p {
+          color: white;
+          font-size:18px;
+          margin: 0px;
+          margin-bottom: 4px;
+        }
+        input[type=text]{
+          border-radius:2px;
+          outline: none;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          border-width:2px;
+        }
+
+        input[type=text]:focus {border-color:#73A4FF; }
+
+        input[type=button] {
+          border-radius: 1px;
+          margin-top: 3px;
+          outline: none;
+          border-color: inherit;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          background-color: #73A4FF;
+          border-width:0px;
+          color: white;
+          font-size:14px;
+        }
+        hr{
+          color: white;
+        }
+        a{
+          cursor: pointer;
+          color: #ffc125;
+          font-size:20px;
+
+        }
+        a:hover{
+          color: #73A4FF;
+        }
+    </style>
+  </head>
+  <body>
+    <h2>Productive Youtube</h2>
+
+        <form>
+        <hr>
+        <p>Disable Recommendations Page</p>
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="Disable_Recommended">
+          <label class="onoffswitch-label" for="Disable_Recommended"></label>
+        </div>
+        <hr>
+        <p>Video Speed</p>
+        <input type="text" id="Speed" value="1" style="width: 3em;" size="4">
+        <hr>
+        <p>Filter Channels</p>
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+          <label class="onoffswitch-label" for="myonoffswitch"></label>
+        </div>
+        <hr>
+        <div id="Content">
+          <p>Add Channel</p>
+          <input type="text" id="AddChannel" value="">
+          <input type="button" id="Add" value="Add">
+          <p>Remove Channel</p>
+          <input type="text" id="RemoveChannel" value="">
+          <input type="button" id="Remove" value="Remove">
+          <p>White List</p>
+          <textarea readonly cols="34" rows="8" id="List"></textarea><br>
+          <input type="button" id="RemoveAll" value="Remove All"><br>
+        </div>
+        <hr>
+        <a id="Pay"><u>Love Productive Youtube? Consider Donating!</u></a>
+        <script src="popup.js"></script>
+    </form>
+  </body>
+</html>
