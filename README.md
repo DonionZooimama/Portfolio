@@ -5,10 +5,8 @@
 ## If you click into any of the folders you'll be able to read about them and see the scripts.
 
 # My Favorites
-* Doom Engine
-* ChromeExtensions
-* Mean Reversion
-* Med Coin Server Api
-* cointegration
-
-  
+* ### Doom Engine
+* ### ChromeExtensions
+* ### Mean Reversion
+* ### Med Coin Server Api
+* ### cointegration
