@@ -5,7 +5,8 @@
 ## If you click into any of the folders you'll be able to read about them and see the scripts.
 
 # My Favorites
-* Doom Engien
+* Doom Engine
+* ChromeExtensions
 * Mean Reversion
 * Indicators
   
