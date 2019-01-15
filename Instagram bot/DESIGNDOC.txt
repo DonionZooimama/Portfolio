@@ -1,0 +1,29 @@
+Instagram Bot Design Documentation
+
+~Requirements
+Must be able to manage multiple accounts at once using a single script 
+Takes login information 
+Ability to control how many follows per hour
+Ability to control how many unfollows per hour
+Ability to control target genera (i.e cars, business, food, fitness, memes)
+Can follow users
+Can unfollow users
+Can like pictures 
+Can find accounts that suit accounts genera 
+Can comment on pictures 
+
+~Summary
+A single python script that takes a list of accounts information such as unfollows per hour and starts to follow unfollow like and comment to increase the engagement for the user's account bringing engagement to the account organically. Should bring users to check out the account bringing engagement and building a brand presence.
+Design
+
+~Like system
+Use a timer and time how long till the next like. From the target audience find their recent photo and like it. First check if the picture has been liked and then proceed.
+When getting a likers list also like that picture.
+
+~Comment system
+Use a timer to check if you can comment on a users picture. From the target list find and comment using a fixed list of comments.
+
+~Combo of both
+When a timer is complete like and comment on the picture.
+The problem with this is i don't know if i should be commenting and liking on profiles who are smaller or on bigger targeted accounts. Liking users with small followings will make them feel important and commenting on bigger accounts will bring people in.
+People who tag others are probably very interested in the content so by following those people might have a high conversion rate.
