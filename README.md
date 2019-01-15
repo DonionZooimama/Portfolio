@@ -9,6 +9,6 @@
 * ChromeExtensions
 * Mean Reversion
 * Med Coin Server Api
-* Indicators
+* cointegration
 
   
