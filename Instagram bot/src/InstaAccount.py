@@ -221,7 +221,7 @@ class Account(threading.Thread):
     def sendEmail(self, log):
         mail = smtplib.SMTP('smtp.gmail.com', 587)
         mail.starttls()
-        mail.login('daniel.ziorli@gmail.com', 'CandyZ1999')
+        mail.login('daniel.ziorli@gmail.com', '')
 
         msg = MIMEMultipart()
         msg['From'] = 'daniel.ziorli@gmail.com'
